@@ -1,11 +1,12 @@
 from review import Review
-from restaurant import Restaurant
+
 
 class Customer(Review):
     # customer initialization
     def __init__(self, given_name, family_name):
         self.given_name = given_name
         self.family_name = family_name
+        # Review.__init__(self, customer, restaurant_name, rating)
     
     # returns customer given_name
     def customer_given_name(self):
@@ -40,7 +41,7 @@ class Customer(Review):
             print ("rating must be a number") 
 
     
-    # print(customer_family_name("smith"))
+    
 
 
     

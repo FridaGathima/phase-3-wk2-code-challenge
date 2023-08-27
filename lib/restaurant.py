@@ -4,7 +4,10 @@ from review import Review
 class Restaurant(Review):
     # restaurant initialization
     def __init__(self, restaurant_name):
-        self.restaurant_name = restaurant_name
+        super().__init__(self, restaurant_name)
+        # self.rating = rating
+        # self.customer = customer
+
         # super().review_all()
         # # self.rating = rating
     
@@ -23,6 +26,8 @@ class Restaurant(Review):
     #     return ("res")
 
     # Returns a **unique** list of all customers who have reviewed a particular restaurant.
-    def restaurant_customers():
-        pass
+    def restaurant_customers(self, customer):
+        super().review_customer()
+        self.customer = customer
+        return self.rating
     

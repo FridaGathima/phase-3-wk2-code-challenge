@@ -1,6 +1,3 @@
-from customer import Customer
-from restaurant import Restaurant
-
 
 class Review:
     # review initialization
@@ -29,8 +26,7 @@ class Review:
 
     # returns the customer object for that review
     def review_customer(self, rating):
-        super().customer_all(self)
-        self.rating = rating 
+        self.rating = rating
         return self.customer
            
     # def review_customer(self, customer, rating):
@@ -41,9 +37,11 @@ class Review:
     
     #returns the customer object for that review
     def review_restaurant(self, rating):
-        super().RESTAURANT_NAME(self)
-        self.rating = rating 
+        self.rating = rating
         return self.restaurant_name
+        # super().RESTAURANT_NAME(self)
+        # self.rating = rating 
+        # return self.restaurant_name
 
-    review_restaurant(4)
+    # review_restaurant(4)
     # review_rating("12", "hello")
