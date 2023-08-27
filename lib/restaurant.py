@@ -31,3 +31,7 @@ class Restaurant(Review):
         self.customer = customer
         return self.rating
     
+    # returns the average star rating for a restaurant based on its reviews
+
+    def restaurant_average_star_rating():
+        pass

@@ -25,7 +25,7 @@ class Customer(Review):
     # returns all instances of the customer
     def customer_all(self):
         # return self # still not sure what to include
-        return "hello customer all test"
+        # return "hello customer all test"
         pass
 
     # Returns a **unique** list of all restaurants a customer has reviewed
@@ -36,12 +36,21 @@ class Customer(Review):
     # given a **restaurant object** and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
     def customer_add_review(restaurant_name, rating):
         if rating == int(rating):  
-            return f"{rating} {customer} {restaurant_name}"
+            return f"{rating}  {restaurant_name}" #{customer}
         else:
-            print ("rating must be a number") 
+            return ("rating must be a number") 
 
+    # Returns the total number of reviews that a customer has authored
+    def customer_num_reviews():
+        pass
+
+    # given a string of a **full name**, returns the **first customer** whose full name matches
+    # not working properly
+    def customer_find_by_name(self, given_name, family_name):
+        if given_name + family_name == given_name + family_name:
+            print (given_name)
     
-    
+    customer_find_by_name("mary smith")
 
 
     
