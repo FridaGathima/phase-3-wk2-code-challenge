@@ -1,4 +1,4 @@
-<h1>Object Relations Code Challenge - Restaurants<h1>
+<h1>Object Relations Code Challenge - Restaurants</h1>
 
 For this assignment, we'll be working with a Yelp-style domain.
 
@@ -13,7 +13,7 @@ For our purposes, a Restaurant has many Reviews, a Customer has many Reviews, an
 
 Restaurant - Customer is a many-to-many relationship.
 
-<h2>Topics<h2>
+<h2>Topics</h2>
 
 - Classes and Instances
 - Class and Instance Methods
@@ -23,7 +23,7 @@ Restaurant - Customer is a many-to-many relationship.
 
 Navigate to **lib folder** which has 3 files i.e. **customer.py**, **restaurant.py** and **review.py** to see the solutions.
 
-<h2>Languages<h2>
+<h2>Languages</h2>
 
 - Python
 - Github
