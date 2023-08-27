@@ -1,4 +1,4 @@
-<h1>Object Relations Code Challenge<h2>
+<h1>Object Relations Code Challenge - Restaurants<h2>
 
 For this assignment, we'll be working with a Yelp-style domain.
  
