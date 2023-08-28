@@ -12,16 +12,16 @@ class Restaurant(Review):
         # # self.rating = rating
     
     # returns restaurant name
-    def RESTAURANT_NAME(self):
+    @property
+    def name(self):
         #shouldnt change put caps
         return self.restaurant_name
         # print (RESTAURANT_NAME("a"))
        
     #returns a list of all reviews for that restaurant
-    def restaurant_reviews(self, restaurant_name):
-        super().review_rating()
-        self.restaurant_name = restaurant_name
-        return self.rating
+    def reviews(self):
+        reviews = Review.all
+        return [rev for rev in reviews if rev.restaurant.RESTAURANT_NAME() == self.restaurant_name]
     #     # should return review_rating() from reviews
     #     return ("res")
 

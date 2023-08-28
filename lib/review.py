@@ -1,10 +1,14 @@
 
 class Review:
     # review initialization
-    def __init__(self, customer, restaurant_name, rating):
+
+    all = []
+
+    def __init__(self, customer, restaurant, rating):
         self.customer = customer
-        self.restaurant_name = restaurant_name
-        self.rating = rating 
+        self.restaurant = restaurant
+        self.rating = rating
+        Review.all.append(self)
 
     # returns the rating for a restaurant
     def review_rating(self, rating):
@@ -17,11 +21,9 @@ class Review:
         self.rating = rating 
     
     # returns all the reviews
-    def review_all(self, customer, restaurant_name, rating):
-        print(f"{self.customer} {self.restaurant_name} {self.rating}")
-        self.customer = customer
-        self.restaurant_name = restaurant_name
-        self.rating = rating 
+    @classmethod
+    def all(cls):
+       return Review.all
         # should i return only the rating no?
 
     # returns the customer object for that review
@@ -36,9 +38,9 @@ class Review:
     #     self.customer = customer
     
     #returns the customer object for that review
-    def review_restaurant(self, rating):
-        self.rating = rating
-        return self.restaurant_name
+    @property
+    def restaurant(self):
+        return self.restaurant
         # super().RESTAURANT_NAME(self)
         # self.rating = rating 
         # return self.restaurant_name

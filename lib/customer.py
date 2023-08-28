@@ -1,11 +1,12 @@
 from review import Review
 
-
 class Customer(Review):
+    all = []
     # customer initialization
     def __init__(self, given_name, family_name):
         self.given_name = given_name
         self.family_name = family_name
+        Customer.all.append(self)
         # Review.__init__(self, customer, restaurant_name, rating)
     
     # returns customer given_name
@@ -26,7 +27,7 @@ class Customer(Review):
     def customer_all(self):
         # return self # still not sure what to include
         # return "hello customer all test"
-        pass
+        return Customer.all
 
     # Returns a **unique** list of all restaurants a customer has reviewed
     def customer_restaurants(self):
@@ -42,7 +43,7 @@ class Customer(Review):
 
     # Returns the total number of reviews that a customer has authored
     def customer_num_reviews():
-        pass
+        return len([review for review in Review.all if review.review_customer().customer_full_name() == self.customer_full_name()])
 
     # given a string of a **full name**, returns the **first customer** whose full name matches
     # not working properly
