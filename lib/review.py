@@ -11,10 +11,7 @@ class Review:
 
     # returns the rating for a restaurant
     def review_rating(self): #review_rating(self, rating)
-        if self.rating == int(self.rating) or self.rating == float(self.rating):  
-            return self.rating
-        else:
-            print ("rating must be a number")
+        self.rating
     
     # returns all the reviews
     @classmethod
